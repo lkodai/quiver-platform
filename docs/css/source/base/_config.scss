@@ -1,15 +1,18 @@
-// The is the core foundation of Quiver.
+// The is the core foundation of quiver.
 // You may add your own local mixins, extends, etc if you need.
 //=================================================================   Dev Dependencies
-// The following URL needs to point to your Bourbon library
-//@import "./bower_components/bourbon/app/assets/stylesheets/_bourbon";
+// The following URL needs to point to your Bourbon and Normalize library
+@import "../../../../bower_components/bourbon/dist/_bourbon";
+@import "../../../bower_components/normalize-css/normalize.css";   
 //=================================================================   Core Library Dependencies
-//@import "./bower_components/normalize-css/normalize.css";   
-        
+@import "../../../../css/source/base/_mixins";          //From quiver
 //================================================================
-@import "_app-vars";                                           //= <- Local file: will override any nxsass vars from _theme ---
+@import "_app-vars";                                           //= <- Local file: will override any quiver vars from _quiver-vars ---
 //================================================================
-      
-// @import "../../../../css/source/base/_theme";        
-// @import "../../../../css/source/base/_extends";    
-// @import "../../../../css/source/base/_base";           
+
+@import "../../../../css/source/base/_quiver-vars";      //From quiver
+@import "../../../../css/source/base/_base";            //From quiver
+
+//================================================================
+//@import "_base";                                           //= <- Local file: will add to base styles ---
+//================================================================

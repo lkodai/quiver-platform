@@ -1,0 +1,131 @@
+@import url(../../../bower_components/normalize-css/normalize.css);
+html {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+p {
+  font-size: 14px;
+  line-height: 19.25px;
+  margin-bottom: 19.25px;
+  font-weight: 300; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 19.25px;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #212121;
+  font-family: "Josefin Sans", sans-serif; }
+
+h1 {
+  font-size: 37.8px;
+  line-height: 51.975px;
+  margin-bottom: 19.25px; }
+
+h2 {
+  font-size: 32.2px;
+  line-height: 44.275px;
+  margin-bottom: 19.25px; }
+
+h3 {
+  font-size: 28px;
+  line-height: 38.5px;
+  margin-bottom: 19.25px;
+  font-weight: 700; }
+
+h4 {
+  font-size: 18.2px;
+  line-height: 25.025px;
+  margin-bottom: 7.7px; }
+
+h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19.25px;
+  margin-bottom: 4.8125px;
+  font-weight: 700; }
+
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #999999;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 19.25px;
+  margin-bottom: 4.8125px;
+  font-weight: 300; }
+
+a {
+  cursor: pointer;
+  color: #8db5e1;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #cccccc;
+  margin-bottom: 19.25px; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300; }
+
+header {
+  background-color: #212121; }
+  header img, header ul {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+  header li {
+    display: inline;
+    padding: 9.625px 19.25px; }
+  header .logo {
+    margin-right: 19.25px; }
+  header .drop-down__trigger:hover .drop-down {
+    display: block; }
+  header .drop-down {
+    display: none;
+    position: absolute;
+    border-left: 4px solid #6464bb;
+    padding-left: 4.8125px;
+    color: #212121;
+    background-color: #f2f1e9;
+    border-radius: 0 3px 3px 0;
+    margin-top: 9.625px;
+    left: 19.25px;
+    box-shadow: 0 2px 6px rgba(33, 33, 33, 0.2); }
+    header .drop-down li {
+      display: block;
+      padding: 9.625px 19.25px 9.625px 9.625px; }
+      header .drop-down li:hover {
+        text-decoration: underline; }
+
+nav {
+  position: relative;
+  vertical-align: middle;
+  color: #f2f1e9; }

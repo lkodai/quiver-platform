@@ -1,7 +1,7 @@
 $quiver-vars: (
   font: (
     header: ("Josefin Sans", sans-serif),
-    header-second: ("Raleway", sans-serif),
+    header-2: ("Raleway", sans-serif),
     body:   ("Open Sans", sans-serif),
     code:   ("Source Code Pro", sans-serif),
     weight--thin: 100,
@@ -15,12 +15,15 @@ $quiver-vars: (
     base-size: 14px,
     base-line: 14px*1.375,
     base-leading: 14px*1.375,
-    gutter: 30px
+    gutter: 14px*1.375
   ),
   color: (
     light:        #8db5e1,
     dark:         #212121,
-    theme-text:   hsl(0, 0%, 40%),
+    theme-text:   hsl(0, 0%, 40%)
+  ),
+  panel: (
+    border-radius: 3px,
   ),
   button: (
     text-default: #fff,
