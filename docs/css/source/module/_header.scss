@@ -1,0 +1,46 @@
+header {
+	background-color: qui(color, dark);
+	img, ul {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+	}
+	li {
+		display: inline;
+		padding: qui(type, base-leading)/2 qui(type, gutter);
+	}
+	.logo {
+		margin-right: qui(type, gutter);
+	}
+	.drop-down__trigger {
+		&:hover {
+			.drop-down {
+				display: block;
+			}
+		}
+	}
+	.drop-down {
+		display: none;
+		position: absolute;
+		border-left: 4px solid qui(color, blueish);
+		padding-left: qui(type, gutter)/4;
+		color: qui(color, dark);
+		background-color: qui(color, off-white);
+		border-radius: 0 qui(panel, border-radius) qui(panel, border-radius) 0;
+		margin-top: qui(type, base-leading)/2;
+		left: qui(type, gutter);
+		box-shadow: 0 2px 6px transparentize(qui(color, dark), .8);
+		li {
+			display: block;
+			padding: qui(type, base-leading)/2 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+nav {
+	position: relative;
+	vertical-align: middle;
+	color: qui(color, off-white);
+}

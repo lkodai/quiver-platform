@@ -1,19 +1,29 @@
 <!doctype html>
-
 @@include('_head.html', {"page-title": "UI Library"})
-
-    <body class="qui" ng-app>
-      <div class="wrapper">
-
-
-        @@include('layout/_nav.html', {"is-current": "is-first"})
-        <main>
-
-
-        </main>
-      </div>
-
+<body class="qui" ng-app>
+  <div class="wrapper">    
+    <header>
+      <nav>
+        <img class="logo" src="http://placehold.it/250x75" alt="Quiver UI Platform"/>
+        <ul>
+          <!-- <li>@@include('layout/_nav.html', {"is-current": "is-first"})</li> -->
+          <li class="drop-down__trigger">Docs <i class="fa fa-caret-down"></i>
+            <ul class="drop-down">
+              <li>Layout</li>
+              <li>Interface</li>
+              <li>Workflows</li>
+              <li>Special Cases</li>
+            </ul>
+          </li>
+          <li>Read Me</li>
+          <li>Changelog</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    </main>
+  </div>
 @@include('_scripts.html')
-
-  </body>
+</body>
 </html>
