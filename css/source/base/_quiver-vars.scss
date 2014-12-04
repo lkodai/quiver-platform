@@ -1,0 +1,53 @@
+$quiver-vars: (
+  font: (
+    header: ("Josefin Sans", sans-serif),
+    header-second: ("Raleway", sans-serif),
+    body:   ("Open Sans", sans-serif),
+    code:   ("Source Code Pro", sans-serif),
+    weight--thin: 100,
+    weight--light: 300,
+    weight--regular: 400,
+    weight--normal: 400,
+    weight--bold: 700,
+    weight--heavy: 800
+  ),
+  type: (
+    base-size: 14px,
+    base-line: 14px*1.375,
+    base-leading: 14px*1.375,
+    gutter: 30px
+  ),
+  color: (
+    light:        #8db5e1,
+    dark:         #212121,
+    theme-text:   hsl(0, 0%, 40%),
+  ),
+  button: (
+    text-default: #fff,
+    color-act: #6699cc,
+    color-add: #5CC281,
+    color-checkout: #DFAC44,
+    color-warn: #CC0033,
+    color-disabled: #CCC,
+    background--act: #6699cc,
+    use-grad: true,
+    use-boxshad: true,
+    use-boxshad-hover: true
+  )
+);
+
+@function qui($key, $value) {
+  @if (map-has-key($app-vars, $key)) {
+  @if (map-has-key( map-get($app-vars, $key), $value)) {
+    @return map-get(map-get($app-vars, $key), $value);
+  } @else {
+    @return map-get(map-get($quiver-vars, $key), $value);
+  }
+  } @else {
+   @return map-get(map-get($quiver-vars, $key), $value);
+  }
+}
+
+$half:50%;
+$third:33.33%;
+$quarter:25%;

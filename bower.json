@@ -1,0 +1,24 @@
+{
+  "name": "Quiver",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "gulp/config-docs.js",
+    "gulp/tasks/dev.js",
+    "gulp/tasks/sass-docs.js",
+    "gulp/tasks/reload-docs.js",
+    "gulp/tasks/fileinclude.js"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.0",
+    "bourbon": "~4.0.2",
+    "font-awesome": "^4.2.0"
+  },
+  "devDependencies": {
+    "rainbow": "~1.1.9",
+    "html5shiv": "~3.7.0"
+  }
+}

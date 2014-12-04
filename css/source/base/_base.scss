@@ -1,0 +1,121 @@
+// //This file should only set standards for base html tags
+// html {
+//   box-sizing: border-box;
+// }
+
+// html, body {
+//   //height: 100%;
+// }
+
+// *, *:before, *:after {
+//   box-sizing: border-box;
+// }
+
+// *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+
+// p {
+//   font-size: nx(type, base-size);
+//   line-height: nx(type, base-line);
+//   margin-bottom: nx(type, base-line);
+//   font-weight: nx(font, weight--light);
+// }
+
+// body {
+//   font-family: nx(font, body);
+//   background: nx(images, background) no-repeat center center fixed;
+//   background-size: cover;
+//   color: nx(color, theme-text);
+//   font-size: nx(type, base-size);
+//   line-height: nx(type, base-line);
+//   font-weight: nx(font, weight--light);
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+//   margin-top: 0;
+//   color: nx(color, dark);
+//   font-family: nx(font, header);
+// }
+
+// h1 {
+//   font-size: nx(type, base-size) * 2.7;
+//   line-height: nx(type, base-line) * 2.7;
+//   margin-bottom: nx(type, base-line);
+// }
+
+// h2 {
+//   font-size: nx(type, base-size) * 2.3;
+//   line-height: nx(type, base-line) * 2.3;
+//   margin-bottom: nx(type, base-line);
+// }
+
+// h3 {
+//   font-size: nx(type, base-size) * 2;
+//   line-height: nx(type, base-line) * 2;
+//   margin-bottom: nx(type, base-line);
+//   font-weight: nx(font, weight--bold);
+// }
+
+// h4 {
+//   font-size: nx(type, base-size) * 1.3;
+//   line-height: nx(type, base-line) * 1.3;
+//   margin-bottom: nx(type, base-line) / 2.5;
+// }
+
+// h5 {
+//   font-family: nx(font, header);
+//   font-size: nx(type, base-size);
+//   line-height: nx(type, base-line);
+//   margin-bottom: nx(type, base-line) / 4;
+//   font-weight: nx(font, weight--bold);
+// }
+
+// h6 {
+//   font-family: nx(font, header);
+//   color: lighten(nx(color, theme-text), 20%);
+//   font-style: italic;
+//   font-size: nx(type, base-size);
+//   line-height: nx(type, base-line);
+//   margin-bottom: nx(type, base-line) / 4;
+//   font-weight: nx(font, weight--light);
+// }
+
+// a {
+//   cursor: pointer;
+//   color: nx(color, light);
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//     cursor: pointer;
+//   }
+// }
+
+// img {
+//   max-width: 100%;
+// }
+
+// hr {
+//   //width:50%;
+//   border: 0;
+//   height: 1px;
+//   background: lighten(nx(color, theme-text), 40%);
+//   margin-bottom: nx(type, base-line);
+// }
+// fieldset {
+//   border: none;
+//   margin: 0;
+//   padding: 0 ;
+// }
+// section {
+//   @extend %cleared;
+// }
+
+// //reset lists because we typically don't utilize them in their default way. See Extends for normal lists
+// ul, ol {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   font-size: nx(type, base-size);
+//   font-weight: nx(font, weight--light);
+// }

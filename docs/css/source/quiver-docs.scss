@@ -1,0 +1,32 @@
+// app.scss is your application style manifest.
+// We import configuration and base items first with a sub-manifest config file in /base
+
+//========================================================
+// BASE
+@import "base/_config";
+
+// _config includes several quiver dependencies and tools.
+// It also includes a local empty _app-vars file where you
+// define app variables and override nxsass defaults.
+// Also we include an empty local _base file for defining
+// core HTML tag styles.
+//========================================================
+
+//========================================================
+// quiver MODULES
+// To use quiver you may choose to include any modules you require.
+// If you use our 'gulp bower' task these paths should be correct.
+// Comment in only what you need ========================
+
+// @import "../../../css/source/module/_button";
+
+//========================================================
+
+
+//==============================================================
+// APPLICATION MODULES
+// This is where you add sass modules in your application
+// Place them in your local /module directory as shown below
+//==============================================================
+
+@import "module/_layout";
