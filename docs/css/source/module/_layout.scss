@@ -1,14 +1,32 @@
 main {
 	padding: qui(type, base-leading)/4 qui(type, gutter)/4;
-	@include breakpoint(small) {
+	@include breakpoint(small-awk) {
 		padding: qui(type, base-leading) qui(type, gutter);
 	}
 }
+// .wrapper {
+//   h2 {
+//     @include clearfix;
+//   }
+// }
+//About Page layout
+.project {
+  @include clearfix;
+  .setup-links, p {
+    @include breakpoint(larger) {
+      float: left;
+      width: 50%
+    }
+  }
+}
 .setup-links {
+  width:100%;
+  text-align: center;
+  margin-bottom: qui(type, base-leading);    
   li {
-    //@include float(top);
-    width:25%;
-    padding:5px;
+    display: inline-block;
+    vertical-align: top;
+    padding:qui(type, base-leading)/2 qui(type, gutter)/2;
     text-align: center;
     &:first-child {
       padding-left: 0;
@@ -23,21 +41,54 @@ main {
     font-size: 5em;
     background:hsla(0,0,0%, 0.05);
     border-radius:100%;
-    padding:27px 0;
-  }
-}
-.contact {
-  margin-top: 60px;
-  img {
-    border-radius: 100%;
+    padding:qui(type, gutter);
+
   }
 }
 .person {
-  width:50%;
-  //@include float(top);
+  display: inline-block;
+  vertical-align: top;
   padding-bottom: qui(type, base-leading);
+  text-align: center;
+  @include breakpoint(small-awk) {
+    text-align: left;
+    clear: left;
+  }  
+  @include breakpoint(larger) {
+    float: left;
+    width: 50%;
+    clear: none;
+  }
   img {
-    width:100px;
+    width: 18%;
+    max-width: 120px;
+    min-width:70px;
     border-radius: 100%;
+    @include breakpoint(small-awk) {
+      float: left;
+      margin-right: qui(type, gutter);
+    }
+  }
+}
+.person--bio {
+  font-size: 1.3em;     
+  @include breakpoint(small-awk) {
+    float: left;
+    width: 75%;
+  }
+  @include breakpoint(medium-awk) {
+    width: 82%;
+  }
+  @include breakpoint(larger) {
+    width: 75%
+  }
+  h3 {
+    text-align: center;
+    @include breakpoint(small-awk) {
+      text-align: left;
+    }
+  }
+  p {
+    text-align: left;
   }
 }

@@ -39,6 +39,9 @@ h2 {
   line-height: qui(type, base-line) * 2.3;
   margin-bottom: qui(type, base-line);
 }
+h1 + h2 {
+  margin-top: -(qui(type, base-line)/2);
+}
 h3 {
   font-size: qui(type, base-size) * 2;
   line-height: qui(type, base-line) * 2;

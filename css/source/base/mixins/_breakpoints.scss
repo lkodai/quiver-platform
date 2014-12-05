@@ -5,6 +5,7 @@ $small: 768px;
 $medium-awk: 900px;
 $medium: 1024px;
 $large: 1200px;
+$larger: 1450px;
 
 @mixin breakpoint($media) {
   @if $media == smallest {
@@ -25,7 +26,10 @@ $large: 1200px;
   @else if $media == medium {
     @media only screen and (min-width: $medium) { @content; }
   }
-  @else if $media == wide {
+  @else if $media == large {
     @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $media == larger {
+    @media only screen and (min-width: $larger) { @content; }
   }
 }
