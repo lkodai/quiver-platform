@@ -1,6 +1,12 @@
 header {
 	background-color: qui(color, dark);
-	img, ul {
+}
+nav {
+	position: relative;
+	vertical-align: middle;
+	color: qui(color, off-white);
+	font-family: qui(font, header);
+	ul {
 		display: inline-block;
 		vertical-align: middle;
 		position: relative;
@@ -8,9 +14,17 @@ header {
 	li {
 		display: inline;
 		padding: qui(type, base-leading)/2 qui(type, gutter);
+		font-size: 1.5em;
+		&:hover {
+			color: qui(color, accent);
+		}
 	}
-	.logo {
-		margin-right: qui(type, gutter);
+	a {
+		color: qui(color, off-white);
+		&:hover {
+			color: qui(color, accent);
+			text-decoration: none;
+		}
 	}
 	.drop-down__trigger {
 		&:hover {
@@ -18,29 +32,53 @@ header {
 				display: block;
 			}
 		}
+		i {
+			top: 2px;
+			position: relative;
+		}
 	}
 	.drop-down {
 		display: none;
 		position: absolute;
-		border-left: 4px solid qui(color, blueish);
-		padding-left: qui(type, gutter)/4;
 		color: qui(color, dark);
-		background-color: qui(color, off-white);
-		border-radius: 0 qui(panel, border-radius) qui(panel, border-radius) 0;
+		background-color: white;
+		border-left: 4px solid qui(color, accent);
+		padding: qui(type, base-leading)/4  0 qui(type, base-leading)/2 qui(type, gutter)/4;
 		margin-top: qui(type, base-leading)/2;
 		left: qui(type, gutter);
 		box-shadow: 0 2px 6px transparentize(qui(color, dark), .8);
 		li {
 			display: block;
 			padding: qui(type, base-leading)/2 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
+			font-size: 1.3em;
+			font-weight: qui(font, weight--normal);
 			&:hover {
 				text-decoration: underline;
+				color: qui(color, dark);
 			}
+		}
+		a {
+			color: qui(color, dark);
 		}
 	}
 }
-nav {
-	position: relative;
+.logo {
+	margin-right: qui(type, gutter);
+	display: inline-block;
 	vertical-align: middle;
-	color: qui(color, off-white);
+	position: relative;
+	padding: qui(type, base-leading)/2 qui(type, gutter)/2;
+	width: 15%;
+	svg {
+		width: 100%;
+		height: 100%;
+		&:hover {
+			g {
+				fill: qui(color, accent);
+			}
+		}
+	}
+	g { //svg tag I guess?
+		fill: qui(color, off-white);
+	}
 }

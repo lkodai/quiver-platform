@@ -1,23 +1,4 @@
-<!doctype html>
-<head>
-    <title>Quiver Platform 0.0.1 UI Library</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700| Raleway:100,400,700| Open+Sans:300,400,700|Source+Code+Pro:400' rel='stylesheet' type='text/css'>
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- code highlighting via rainbow -->
-    <link href="../bower_components/rainbow/themes/twilight.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/quiver-docs.css"/>
-    <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <![endif]-->
-</head>
-<body class="qui" ng-app>
-  <div class="wrapper">    
-    <header>
-      <nav>
-        <section class="logo">
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="351px" height="110px" viewBox="0 0 351 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
     <title>shapes</title>
@@ -39,38 +20,3 @@
         </g>
     </g>
 </svg>
-        </section>
-        <ul>
-          
-          <li class="drop-down__trigger">Docs <i class="fa fa-angle-down"></i>
-            <ul class="drop-down">
-              <li>Layout</li>
-              <li>Interface</li>
-              <li>Workflows</li>
-              <li>Special Cases</li>
-            </ul>
-          </li>
-          <li>Read Me</li>
-          <li>Changelog</li>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-    </main>
-  </div>
-    <script src="js/nxsass.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ["Josefin Sans", "Raleway", "Open Sans", "Source Code Pro"]
-        }
-      });
-    </script>
-   <script src="../bower_components/rainbow/js/rainbow.min.js"></script>
-   <script src="../bower_components/rainbow/js/language/css.js"></script>
-   <script src="../bower_components/rainbow/js/language/generic.js"></script>
-   <script src="../bower_components/rainbow/js/language/html.js"></script>
-</body>
-</html>
