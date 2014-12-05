@@ -4,3 +4,40 @@ main {
 		padding: qui(type, base-leading) qui(type, gutter);
 	}
 }
+.setup-links {
+  li {
+    //@include float(top);
+    width:25%;
+    padding:5px;
+    text-align: center;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right:0;
+    }
+  }
+  .resource {
+    display: block;
+    text-align:center;
+    font-size: 5em;
+    background:hsla(0,0,0%, 0.05);
+    border-radius:100%;
+    padding:27px 0;
+  }
+}
+.contact {
+  margin-top: 60px;
+  img {
+    border-radius: 100%;
+  }
+}
+.person {
+  width:50%;
+  //@include float(top);
+  padding-bottom: qui(type, base-leading);
+  img {
+    width:100px;
+    border-radius: 100%;
+  }
+}

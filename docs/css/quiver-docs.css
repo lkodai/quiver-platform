@@ -101,6 +101,34 @@ main {
     main {
       padding: 22.652px 22.652px; } }
 
+.setup-links li {
+  width: 25%;
+  padding: 5px;
+  text-align: center; }
+  .setup-links li:first-child {
+    padding-left: 0; }
+  .setup-links li:last-child {
+    padding-right: 0; }
+.setup-links .resource {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 100%;
+  padding: 27px 0; }
+
+.contact {
+  margin-top: 60px; }
+  .contact img {
+    border-radius: 100%; }
+
+.person {
+  width: 50%;
+  padding-bottom: 22.652px; }
+  .person img {
+    width: 100px;
+    border-radius: 100%; }
+
 header {
   background-color: #212121;
   padding: 5.663px 5.663px; }
