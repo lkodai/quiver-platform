@@ -1,11 +1,17 @@
 header {
 	background-color: qui(color, dark);
+	padding: qui(type, base-leading)/4 qui(type, gutter)/4;
+	@include breakpoint(small) {
+		padding: qui(type, base-leading)/2 qui(type, gutter) 0;
+	}
+	
 }
 nav {
 	position: relative;
 	vertical-align: middle;
 	color: qui(color, off-white);
 	font-family: qui(font, header);
+	width: 100%;
 	ul {
 		display: inline-block;
 		vertical-align: middle;
@@ -13,14 +19,18 @@ nav {
 	}
 	li {
 		display: inline;
-		padding: qui(type, base-leading)/2 qui(type, gutter);
-		font-size: 1.5em;
+		padding: qui(type, base-leading)/2 qui(type, gutter)/2;
+		font-size: 1.1em;
 		&:hover {
 			color: qui(color, accent);
+		}
+		@include breakpoint(small) {
+			font-size: 1.3em;
 		}
 	}
 	a {
 		color: qui(color, off-white);
+		cursor: pointer;
 		&:hover {
 			color: qui(color, accent);
 			text-decoration: none;
@@ -30,6 +40,16 @@ nav {
 		&:hover {
 			.drop-down {
 				display: block;
+				opacity: 1;
+				height:166px; //find a better solution
+				transition: height .1s ease-in;
+				@include breakpoint(small) {
+					height: 196px; //find a better solution
+				}
+				li {
+					opacity: 1;
+					transition: opacity .5s ease-in;
+				}
 			}
 		}
 		i {
@@ -38,23 +58,31 @@ nav {
 		}
 	}
 	.drop-down {
-		display: none;
+		//display: none;
+		opacity: 0;
+		height: 0;
 		position: absolute;
 		color: qui(color, dark);
 		background-color: white;
 		border-left: 4px solid qui(color, accent);
-		padding: qui(type, base-leading)/4  0 qui(type, base-leading)/2 qui(type, gutter)/4;
-		margin-top: qui(type, base-leading)/2;
-		left: qui(type, gutter);
+		padding: qui(type, base-leading)/4  0 qui(type, base-leading)/4 qui(type, gutter)/4;
+		//margin-top: qui(type, base-leading)/2;
+		top: qui(type, base-leading);
+		left: qui(type, gutter)/2;
 		box-shadow: 0 2px 6px transparentize(qui(color, dark), .8);
+		transition: height .1s ease-out;
 		li {
-			display: block;
-			padding: qui(type, base-leading)/2 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
-			font-size: 1.3em;
+			display: list-item;
+			padding: qui(type, base-leading)/4 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
+			font-size: 1.1em;
 			font-weight: qui(font, weight--normal);
+			opacity: 0;
 			&:hover {
 				text-decoration: underline;
 				color: qui(color, dark);
+			}
+			@include breakpoint(small) {
+				padding: qui(type, base-leading)/2 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
 			}
 		}
 		a {
@@ -63,12 +91,14 @@ nav {
 	}
 }
 .logo {
-	margin-right: qui(type, gutter);
-	display: inline-block;
+	margin: 0 auto;
+	display: block;
 	vertical-align: middle;
 	position: relative;
-	padding: qui(type, base-leading)/2 qui(type, gutter)/2;
-	width: 15%;
+	width: $half;
+	@include breakpoint(small) {
+		display: inline-block;
+	}
 	svg {
 		width: 100%;
 		height: 100%;
@@ -82,3 +112,22 @@ nav {
 		fill: qui(color, off-white);
 	}
 }
+// .logo {
+// 	margin-right: qui(type, gutter);
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	position: relative;
+// 	width: 15%;
+// 	svg {
+// 		width: 100%;
+// 		height: 100%;
+// 		&:hover {
+// 			g {
+// 				fill: qui(color, accent);
+// 			}
+// 		}
+// 	}
+// 	g { //svg tag I guess?
+// 		fill: qui(color, off-white);
+// 	}
+// }

@@ -1,0 +1,6 @@
+main {
+	padding: qui(type, base-leading)/4 qui(type, gutter)/4;
+	@include breakpoint(small) {
+		padding: qui(type, base-leading) qui(type, gutter);
+	}
+}

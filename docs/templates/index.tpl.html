@@ -2,28 +2,9 @@
 @@include('_head.html', {"page-title": "UI Library"})
 <body class="qui" ng-app>
   <div class="wrapper">    
-    <header>
-      <nav>
-        <section class="logo">
-          @@include('../images/logo.svg')
-        </section>
-        <ul>
-          <!-- <li>@@include('layout/_nav.html', {"is-current": "is-first"})</li> -->
-          <li class="drop-down__trigger">Docs <i class="fa fa-angle-down"></i>
-            <ul class="drop-down">
-              <li>Layout</li>
-              <li>Interface</li>
-              <li>Workflows</li>
-              <li>Special Cases</li>
-            </ul>
-          </li>
-          <li>Read Me</li>
-          <li>Changelog</li>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
+    @@include('_header.html')
     <main>
+      <h1>Test</h1>
     </main>
   </div>
 @@include('_scripts.html')

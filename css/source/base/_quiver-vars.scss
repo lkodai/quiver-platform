@@ -1,7 +1,9 @@
+$base-size: 14px;
+$base-line: $base-size*1.618;
+
 $quiver-vars: (
   font: (
     header: ("Josefin Sans", sans-serif),
-    header-2: ("Raleway", sans-serif),
     body:   ("Open Sans", sans-serif),
     code:   ("Source Code Pro", sans-serif),
     weight--thin: 100,
@@ -12,10 +14,10 @@ $quiver-vars: (
     weight--heavy: 800
   ),
   type: (
-    base-size: 14px,
-    base-line: 14px*1.375,
-    base-leading: 14px*1.375,
-    gutter: 14px*1.375
+    base-size: $base-size,
+    base-line: $base-line,
+    base-leading: $base-line,
+    gutter: $base-line
   ),
   color: (
     light:        #8db5e1,
