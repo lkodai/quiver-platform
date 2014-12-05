@@ -16,6 +16,12 @@ nav {
 		display: inline-block;
 		vertical-align: middle;
 		position: relative;
+		text-align: center;
+		width: 100%;
+		@include breakpoint(smaller) {
+			text-align: left;
+			width: auto;
+		}
 	}
 	li {
 		display: inline;
@@ -24,8 +30,11 @@ nav {
 		&:hover {
 			color: qui(color, accent);
 		}
-		@include breakpoint(small) {
+		@include breakpoint(smallest) {
 			font-size: 1.3em;
+		}
+		@include breakpoint(small) {
+			font-size: 1.5em;
 		}
 	}
 	a {
@@ -68,9 +77,17 @@ nav {
 		padding: qui(type, base-leading)/4  0 qui(type, base-leading)/4 qui(type, gutter)/4;
 		//margin-top: qui(type, base-leading)/2;
 		top: qui(type, base-leading);
-		left: qui(type, gutter)/2;
+		left: 5%;
 		box-shadow: 0 2px 6px transparentize(qui(color, dark), .8);
 		transition: height .1s ease-out;
+		text-align: left;
+		width: auto;
+		@include breakpoint (smallest) {
+			left: 16.5%;
+		}
+		@include breakpoint (smaller) {
+			left: qui(type, gutter)/2;
+		}
 		li {
 			display: list-item;
 			padding: qui(type, base-leading)/4 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
@@ -83,6 +100,7 @@ nav {
 			}
 			@include breakpoint(small) {
 				padding: qui(type, base-leading)/2 qui(type, gutter) qui(type, base-leading)/2 qui(type, gutter)/2;
+				font-size: 1.3em;
 			}
 		}
 		a {
@@ -96,8 +114,14 @@ nav {
 	vertical-align: middle;
 	position: relative;
 	width: $half;
-	@include breakpoint(small) {
+	max-width: 200px;
+	@include breakpoint(smaller) {
 		display: inline-block;
+		width: 25%;
+		margin-right: qui(type, gutter)/2;
+	}
+	@include breakpoint(small) {
+		margin-right: qui(type, gutter);
 	}
 	svg {
 		width: 100%;
