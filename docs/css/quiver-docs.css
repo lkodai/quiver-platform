@@ -13,15 +13,15 @@ html, body {
 
 p {
   font-size: 14px;
-  line-height: 19.25px;
-  margin-bottom: 19.25px;
+  line-height: 22.652px;
+  margin-bottom: 22.652px;
   font-weight: 300; }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #666666;
   font-size: 14px;
-  line-height: 19.25px;
+  line-height: 22.652px;
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,30 +31,30 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 37.8px;
-  line-height: 51.975px;
-  margin-bottom: 19.25px; }
+  line-height: 61.1604px;
+  margin-bottom: 22.652px; }
 
 h2 {
   font-size: 32.2px;
-  line-height: 44.275px;
-  margin-bottom: 19.25px; }
+  line-height: 52.0996px;
+  margin-bottom: 22.652px; }
 
 h3 {
   font-size: 28px;
-  line-height: 38.5px;
-  margin-bottom: 19.25px;
+  line-height: 45.304px;
+  margin-bottom: 22.652px;
   font-weight: 700; }
 
 h4 {
   font-size: 18.2px;
-  line-height: 25.025px;
-  margin-bottom: 7.7px; }
+  line-height: 29.4476px;
+  margin-bottom: 9.0608px; }
 
 h5 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
-  line-height: 19.25px;
-  margin-bottom: 4.8125px;
+  line-height: 22.652px;
+  margin-bottom: 5.663px;
   font-weight: 700; }
 
 h6 {
@@ -62,8 +62,8 @@ h6 {
   color: #999999;
   font-style: italic;
   font-size: 14px;
-  line-height: 19.25px;
-  margin-bottom: 4.8125px;
+  line-height: 22.652px;
+  margin-bottom: 5.663px;
   font-weight: 300; }
 
 a {
@@ -81,7 +81,7 @@ hr {
   border: 0;
   height: 1px;
   background: #cccccc;
-  margin-bottom: 19.25px; }
+  margin-bottom: 22.652px; }
 
 fieldset {
   border: none;
@@ -95,62 +95,97 @@ ul, ol {
   font-size: 14px;
   font-weight: 300; }
 
+main {
+  padding: 5.663px 5.663px; }
+  @media only screen and (min-width: 768px) {
+    main {
+      padding: 22.652px 22.652px; } }
+
 header {
-  background-color: #212121; }
+  background-color: #212121;
+  padding: 5.663px 5.663px; }
+  @media only screen and (min-width: 768px) {
+    header {
+      padding: 11.326px 22.652px 0; } }
 
 nav {
   position: relative;
   vertical-align: middle;
   color: #f2f1e9;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%; }
   nav ul {
     display: inline-block;
     vertical-align: middle;
     position: relative; }
   nav li {
     display: inline;
-    padding: 9.625px 19.25px;
-    font-size: 1.5em; }
+    padding: 11.326px 11.326px;
+    font-size: 1.1em; }
     nav li:hover {
       color: #dfc856; }
+    @media only screen and (min-width: 768px) {
+      nav li {
+        font-size: 1.3em; } }
   nav a {
-    color: #f2f1e9; }
+    color: #f2f1e9;
+    cursor: pointer; }
     nav a:hover {
       color: #dfc856;
       text-decoration: none; }
   nav .drop-down__trigger:hover .drop-down {
-    display: block; }
+    display: block;
+    opacity: 1;
+    height: 166px;
+    -webkit-transition: height 0.1s ease-in;
+            transition: height 0.1s ease-in; }
+    @media only screen and (min-width: 768px) {
+      nav .drop-down__trigger:hover .drop-down {
+        height: 196px; } }
+    nav .drop-down__trigger:hover .drop-down li {
+      opacity: 1;
+      -webkit-transition: opacity 0.5s ease-in;
+              transition: opacity 0.5s ease-in; }
   nav .drop-down__trigger i {
     top: 2px;
     position: relative; }
   nav .drop-down {
-    display: none;
+    opacity: 0;
+    height: 0;
     position: absolute;
     color: #212121;
     background-color: white;
     border-left: 4px solid #dfc856;
-    padding: 4.8125px 0 9.625px 4.8125px;
-    margin-top: 9.625px;
-    left: 19.25px;
-    box-shadow: 0 2px 6px rgba(33, 33, 33, 0.2); }
+    padding: 5.663px 0 5.663px 5.663px;
+    top: 22.652px;
+    left: 11.326px;
+    box-shadow: 0 2px 6px rgba(33, 33, 33, 0.2);
+    -webkit-transition: height 0.1s ease-out;
+            transition: height 0.1s ease-out; }
     nav .drop-down li {
-      display: block;
-      padding: 9.625px 19.25px 9.625px 9.625px;
-      font-size: 1.3em;
-      font-weight: 400; }
+      display: list-item;
+      padding: 5.663px 22.652px 11.326px 11.326px;
+      font-size: 1.1em;
+      font-weight: 400;
+      opacity: 0; }
       nav .drop-down li:hover {
         text-decoration: underline;
         color: #212121; }
+      @media only screen and (min-width: 768px) {
+        nav .drop-down li {
+          padding: 11.326px 22.652px 11.326px 11.326px; } }
     nav .drop-down a {
       color: #212121; }
 
 .logo {
-  margin-right: 19.25px;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
   vertical-align: middle;
   position: relative;
-  padding: 9.625px 9.625px;
-  width: 15%; }
+  width: 50%; }
+  @media only screen and (min-width: 768px) {
+    .logo {
+      display: inline-block; } }
   .logo svg {
     width: 100%;
     height: 100%; }
