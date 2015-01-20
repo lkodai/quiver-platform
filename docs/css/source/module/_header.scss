@@ -28,6 +28,7 @@ nav {
 		display: inline;
 		padding: qui(type, base-leading)/2 qui(type, gutter)/2;
 		font-size: 1.1em;
+		letter-spacing: 1.5px;
 		&:hover {
 			color: qui(color, accent);
 		}
@@ -118,18 +119,19 @@ nav {
 	max-width: 200px;
 	@include breakpoint(smaller) {
 		display: inline-block;
-		width: 25%;
+		width: 20%;
 		margin-right: qui(type, gutter)/2;
 	}
 	@include breakpoint(small) {
 		margin-right: qui(type, gutter);
 	}
 	@include breakpoint(large) {
-		margin-right: qui(type, gutter)*4;
+		margin-right: qui(type, gutter)*3;
 	}
 	svg {
 		width: 100%;
 		height: 100%;
+		max-width: 154px;
 		&:hover {
 			g {
 				fill: qui(color, accent);
