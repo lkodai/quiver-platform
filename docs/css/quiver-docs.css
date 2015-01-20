@@ -1,4 +1,5 @@
 @import url(../../../bower_components/normalize-css/normalize.css);
+@import url(../../../bower_components/normalize-css/normalize.css);
 html {
   box-sizing: border-box; }
 
@@ -98,11 +99,195 @@ ul, ol {
   font-size: 14px;
   font-weight: 300; }
 
+h3:first-child {
+  margin-top: 22.652px; }
+
 p {
   max-width: 926px; }
 
 section {
   margin-bottom: 22.652px; }
+
+.btn--act, .btn--more-up, .btn--more-down, .btn--success, .btn--add, .btn-primary.active, .btn--checkout, .btn--warn, .btn--modify, .btn--reset, .btn--cancel, button.is-successful, button.is-successful:hover, button.is-failed, button.is-failed:hover, button.is-waiting, button.is-waiting:hover, .btn--kill {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 11.326px 22.652px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px; }
+  .is-disabled.btn--act, .is-disabled.btn--more-up, .is-disabled.btn--more-down, .is-disabled.btn--success, .is-disabled.btn--add, .is-disabled.btn-primary.active, .is-disabled.btn--checkout, .is-disabled.btn--warn, .is-disabled.btn--modify, .is-disabled.btn--reset, .is-disabled.btn--cancel, button.is-disabled.is-successful, button.is-disabled.is-failed, button.is-disabled.is-waiting, .is-disabled.btn--kill, .is-disabled.btn--act:hover, .is-disabled.btn--more-up:hover, .is-disabled.btn--more-down:hover, .is-disabled.btn--success:hover, .is-disabled.btn--add:hover, .is-disabled.btn-primary.active:hover, .is-disabled.btn--checkout:hover, .is-disabled.btn--warn:hover, .is-disabled.btn--modify:hover, .is-disabled.btn--reset:hover, .is-disabled.btn--cancel:hover, button.is-disabled.is-successful:hover, button.is-disabled.is-failed:hover, button.is-disabled.is-waiting:hover, .is-disabled.btn--kill:hover, [disabled].btn--act, [disabled].btn--more-up, [disabled].btn--more-down, [disabled].btn--success, [disabled].btn--add, [disabled].btn-primary.active, [disabled].btn--checkout, [disabled].btn--warn, [disabled].btn--modify, [disabled].btn--reset, [disabled].btn--cancel, button[disabled].is-successful, button[disabled].is-failed, button[disabled].is-waiting, [disabled].btn--kill, [disabled].btn--act:hover, [disabled].btn--more-up:hover, [disabled].btn--more-down:hover, [disabled].btn--success:hover, [disabled].btn--add:hover, [disabled].btn-primary.active:hover, [disabled].btn--checkout:hover, [disabled].btn--warn:hover, [disabled].btn--modify:hover, [disabled].btn--reset:hover, [disabled].btn--cancel:hover, button[disabled].is-successful:hover, button[disabled].is-failed:hover, button[disabled].is-waiting:hover, [disabled].btn--kill:hover {
+    color: gray;
+    background: #CCC;
+    text-shadow: none;
+    box-shadow: none;
+    cursor: default;
+    -webkit-transition: .08s all linear;
+            transition: .08s all linear; }
+
+.btn--act, .btn--more-up, .btn--more-down {
+  color: #fff;
+  background: #6699cc;
+  text-shadow: 1px 1px 0 #3973ac;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #2e5c8a 0 -1px 0 inset, #3d7ab8 0 -2px 0 inset, #7da8d4 0 1px 0 inset, #8cb2d9 0 2px 0 inset, #3d7ab8 0 0 0px 0px inset; }
+  .btn--act:hover, .btn--more-up:hover, .btn--more-down:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #2e5c8a 0 -1px 0 inset, #3d7ab8 0 -2px 0 inset, #71a1d0 0 1px 0 inset, #79a6d2 0 2px 0 inset, #3c78b4 0 0 22px 5px inset; }
+
+.btn--success, .btn--add, .btn-primary.active {
+  color: #fff;
+  background: #5CC281;
+  text-shadow: 1px 1px 0 #39985c;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #2d7748 0 -1px 0 inset, #3da462 0 -2px 0 inset, #72ca92 0 1px 0 inset, #81d09e 0 2px 0 inset, #3da462 0 0 0px 0px inset; }
+  .btn--success:hover, .btn--add:hover, .btn-primary.active:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #2d7748 0 -1px 0 inset, #3da462 0 -2px 0 inset, #67c68a 0 1px 0 inset, #6fc98f 0 2px 0 inset, #3ca060 0 0 22px 5px inset; }
+
+.btn--checkout {
+  color: #fff;
+  background: #DFAC44;
+  text-shadow: 1px 1px 0 #b7851f;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #906919 0 -1px 0 inset, #c48f22 0 -2px 0 inset, #e3b85e 0 1px 0 inset, #e6bf70 0 2px 0 inset, #c48f22 0 0 0px 0px inset; }
+  .btn--checkout:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #906919 0 -1px 0 inset, #c48f22 0 -2px 0 inset, #e1b251 0 1px 0 inset, #e3b65a 0 2px 0 inset, #c08c21 0 0 22px 5px inset; }
+
+.btn--warn {
+  color: #fff;
+  background: #CC0033;
+  text-shadow: 1px 1px 0 #800020;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #520014 0 -1px 0 inset, #8f0024 0 -2px 0 inset, #eb003b 0 1px 0 inset, #ff0040 0 2px 0 inset, #8f0024 0 0 0px 0px inset; }
+  .btn--warn:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #520014 0 -1px 0 inset, #8f0024 0 -2px 0 inset, #db0037 0 1px 0 inset, #e60039 0 2px 0 inset, #8a0022 0 0 22px 5px inset; }
+
+.btn--modify {
+  color: #72ac87;
+  border: 1px dotted #5CC281;
+  text-shadow: none;
+  background: none;
+  box-shadow: inset 0 0 0 0 #5CC281;
+  -webkit-transition: all 0.045s ease-in-out;
+          transition: all 0.045s ease-in-out; }
+  .btn--modify:hover, .btn--modify:focus {
+    text-decoration: none;
+    border: 1px solid #5CC281;
+    text-shadow: 0 1px 0 #40ab67;
+    color: #fff;
+    box-shadow: inset 0 0 22px 16px #5CC281; }
+
+.btn--reset {
+  color: #7a99b8;
+  border: 1px dotted #6699cc;
+  text-shadow: none;
+  background: none;
+  box-shadow: inset 0 0 0 0 #6699cc;
+  -webkit-transition: all 0.045s ease-in-out;
+          transition: all 0.045s ease-in-out; }
+  .btn--reset:hover, .btn--reset:focus {
+    text-decoration: none;
+    border: 1px solid #6699cc;
+    text-shadow: 0 1px 0 #407fbf;
+    color: #fff;
+    box-shadow: inset 0 0 22px 16px #6699cc; }
+
+.btn--cancel {
+  color: #b8143d;
+  border: 1px dotted #CC0033;
+  text-shadow: none;
+  background: none;
+  box-shadow: inset 0 0 0 0 #CC0033;
+  -webkit-transition: all 0.045s ease-in-out;
+          transition: all 0.045s ease-in-out; }
+  .btn--cancel:hover, .btn--cancel:focus {
+    text-decoration: none;
+    border: 1px solid #CC0033;
+    text-shadow: 0 1px 0 #990026;
+    color: #fff;
+    box-shadow: inset 0 0 22px 16px #CC0033; }
+
+button.is-successful, button.is-successful:hover {
+  color: #fff;
+  background: #5CC281;
+  text-shadow: 1px 1px 0 #39985c;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #2d7748 0 -1px 0 inset, #3da462 0 -2px 0 inset, #72ca92 0 1px 0 inset, #81d09e 0 2px 0 inset, #3da462 0 0 0px 0px inset;
+  -webkit-transition: .5s all ease-in;
+          transition: .5s all ease-in;
+  cursor: default; }
+  button.is-successful:hover, button.is-successful:hover:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #2d7748 0 -1px 0 inset, #3da462 0 -2px 0 inset, #67c68a 0 1px 0 inset, #6fc98f 0 2px 0 inset, #3ca060 0 0 22px 5px inset; }
+button.is-failed, button.is-failed:hover {
+  color: #fff;
+  background: #CC0033;
+  text-shadow: 1px 1px 0 #800020;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #520014 0 -1px 0 inset, #8f0024 0 -2px 0 inset, #eb003b 0 1px 0 inset, #ff0040 0 2px 0 inset, #8f0024 0 0 0px 0px inset;
+  -webkit-transition: .5s all ease-out;
+          transition: .5s all ease-out;
+  cursor: default; }
+  button.is-failed:hover, button.is-failed:hover:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #520014 0 -1px 0 inset, #8f0024 0 -2px 0 inset, #db0037 0 1px 0 inset, #e60039 0 2px 0 inset, #8a0022 0 0 22px 5px inset; }
+button.is-waiting, button.is-waiting:hover {
+  color: #fff;
+  background: #DFAC44;
+  text-shadow: 1px 1px 0 #b7851f;
+  -webkit-transition: all 0.05s ease-in-out;
+          transition: all 0.05s ease-in-out;
+  box-shadow: #906919 0 -1px 0 inset, #c48f22 0 -2px 0 inset, #e3b85e 0 1px 0 inset, #e6bf70 0 2px 0 inset, #c48f22 0 0 0px 0px inset;
+  -webkit-transition: .5s all ease-in;
+          transition: .5s all ease-in;
+  cursor: default; }
+  button.is-waiting:hover, button.is-waiting:hover:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: #906919 0 -1px 0 inset, #c48f22 0 -2px 0 inset, #e1b251 0 1px 0 inset, #e3b65a 0 2px 0 inset, #c08c21 0 0 22px 5px inset; }
+  button.is-waiting i, button.is-waiting:hover i {
+    text-shadow: none; }
+
+.btn--kill {
+  position: absolute;
+  background: none;
+  right: 3px;
+  top: 3px;
+  box-shadow: none;
+  padding: 2px 4px;
+  margin: 0;
+  -webkit-transition: all .18s ease-in-out;
+          transition: all .18s ease-in-out; }
+  .btn--kill:hover, .btn--kill:focus {
+    color: #CC0033;
+    font-size: 17px;
+    background: none;
+    box-shadow: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
+
+.btn--more-up, .btn--more-down {
+  text-align: center;
+  width: 100%;
+  border-radius: 3px 3px 0 0; }
+
+.btn--more-down {
+  border-radius: 0 0 3px 3px; }
 
 main {
   padding: 5.663px 5.663px; }
@@ -230,15 +415,15 @@ nav {
     display: block;
     opacity: 1;
     height: 166px;
-    -webkit-transition: height 0.1s ease-in;
-            transition: height 0.1s ease-in; }
+    -webkit-transition: height .1s ease-in;
+            transition: height .1s ease-in; }
     @media only screen and (min-width: 768px) {
       nav .drop-down__trigger:hover .drop-down {
         height: 196px; } }
     nav .drop-down__trigger:hover .drop-down li {
       opacity: 1;
-      -webkit-transition: opacity 0.5s ease-in;
-              transition: opacity 0.5s ease-in; }
+      -webkit-transition: opacity .5s ease-in;
+              transition: opacity .5s ease-in; }
   nav .drop-down__trigger i {
     top: 2px;
     position: relative; }
@@ -253,8 +438,8 @@ nav {
     top: 22.652px;
     left: 5%;
     box-shadow: 0 2px 6px rgba(33, 33, 33, 0.2);
-    -webkit-transition: height 0.1s ease-out;
-            transition: height 0.1s ease-out;
+    -webkit-transition: height .1s ease-out;
+            transition: height .1s ease-out;
     text-align: left;
     width: auto; }
     @media only screen and (min-width: 400px) {

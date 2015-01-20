@@ -58,50 +58,74 @@
   </nav>
 </header>
     <main>
-      <h1>About Quiver</h1>
-        <h2>The Project</h2>
-        <section class="project">
-          <p>Quiver was born from a simple desire to have a proper style guide at Incomm Digital Solutions, and grew to a very handy multi-purpose tool. After several months of part-time development, the TotallyRad&reg; meter was off the charts, and so we polished her up and decided to share with the public. We use it as a living style guide, a rapid prototyping tool, a simpler-to-maintain production code base, a development sandbox, an accountability check, and a neato side-project to keep ourselves jazzed.<br/>
-          <br/>
-          We hope you find Quiver as useful as we do, and please share your feedback with us so we can keep the TotallyRad&reg; meter turned up to full-blast.</p>
-          <ul class="setup-links">
-            <li>
-              <a href="http://nx.giftango.com/docs" class="resource">
-                <i class="fa fa-book"></i></a>
-                Documentation
-            </li>
-            <li>
-              <a href="https://github.com/InCommDigitalSolutions/quiver-platform" class="resource">
-                <i class="fa fa-github"></i></a>
-                Github Repo
-            </li>
-            <li>
-              <a href="https://github.com/InCommDigitalSolutions/quiver-platform/blob/master/changelog.md" class="resource">
-                <i class="fa fa-info-circle"></i></a>
-                Changelog
-            </li>
-            <li>
-              <a href="https://github.com/InCommDigitalSolutions/quiver-platform/issues" class="resource">
-                <i class="fa fa-bug"></i></a>
-                Issue Log
-            </li>
-          </ul>
-        </section>
-        <h2>The Authors</h2>
-        <section class="person">
-          <img src="https://avatars1.githubusercontent.com/u/167672" alt="Andrew Colclough"/>
-          <div class="person--bio">
-            <h3>Andrew Colclough: <a href="https://twitter.com/wtc">@wtc</a></h3>
-            <p>Andrew is a world-class tie-fighter pilot and a father of two boys, both of which are doomed to be hardcore nerds. He's been punishing himself with CSS and front-end web tech for several years now, after fleeing the game industry. He regularly enjoys ice cold Bud Light Lime-a-Ritas&reg; with his bros and aspires to become Brad Frost.</p>
+      <h1>Interface Pieces</h1>
+      <section class="buttons" id="buttons">
+  <h2>Buttons</h2>
+  <div class="buttons_example">
+    <pre><code data-language="html">
+<!-- pattern -->            
+<button class="btn--[modifier]">Button Text</button>
+
+<button class="btn--act">Act</button>
+<button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
+<button class="btn--checkout">Checkout</button>
+<button class="btn--warn">Warn</button>
+
+<button class="btn--modify">Modify</button>
+<button class="btn--reset">Reset</button>
+<button class="btn--cancel">Cancel</button>
+
+<button class="btn--act is-disabled">is-disabled</button>
+<button class="btn--act is-successful">is-successful</button>
+<button class="btn--act is-failed">is-failed</button>
+<button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
+
+<!-- Kill a panel or UI element -->
+<button class="btn--kill"><i class="fa fa-times"></i></button>
+
+<!-- Up and Down content-wide -->
+<button class="btn--more-up"><i class="fa fa-chevron-up"></i></button>
+<button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
+            </code></pre>
           </div>
-        </section>
-        <section class="person">
-          <img src="https://avatars1.githubusercontent.com/u/3605094" alt="Lauren Kodai">
-          <div class="person--bio">
-            <h3>Lauren Kodai: <a href="https://twitter.com/The_Lela">@The_Lela</a></h3>
-            <p>Lauren is actually an alien parading around as a Milky Way Galaxy Earth human. She claims to be "from the internet" to help hide the discrepencies of her façade. She's swam in the murky waters of CSS and dom-manipulation since she was a pup. She attempted to enjoy a Bud Light Lime-a-Rita&reg; with the bros, but the liquid burned through her insides.
-          </div>
-        </section>
+  <div class="panel">
+    <h3>Standard Button Styles</h3>
+    <p>Primary user actions. Note that Font Awesome icons can be added to buttons when appropriate.</p>
+    <button class="btn--act">Act</button>
+    <button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
+    <button class="btn--checkout">Checkout</button>
+    <button class="btn--warn">Warn</button>
+  </div>
+
+  <div class="panel">
+    <h3>Minimal Button Styles</h3>
+    <p>Used for secondary user paths and actions.</p>
+    <button class="btn--modify">Modify</button>
+    <button class="btn--reset">Reset</button>
+    <button class="btn--cancel">Cancel</button>
+  </div>
+  <div class="panel">
+    <h3>Angular-controlled Button States</h3>
+    <p>These classes can be added and removed with js for a responsive and informative user experience.</p>
+    <button class="btn--act is-disabled">is-disabled</button>
+    <button class="btn--act is-successful">is-successful</button>
+    <button class="btn--act is-failed">is-failed</button>
+    <button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
+  </div>
+  <div class="panel">
+    <h3>Special Case Buttons</h3>
+    <p>Where a panel or UI element requires a simple close action (see top right). Typically should cancel whatever action generated the panel.</p>
+    <button class="btn--kill">Kill <i class="fa fa-times"></i></button>
+    <hr/>
+    <p>Up and down (or 'load more') buttons span the width of the container they are in and can be used in modals or embedded on "regular" pages.</p>
+    <button class="btn--more-up"><i class="fa fa-chevron-up"></i>
+    </button>
+    <p class="item">[Content here]</p>
+    <button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
+    &nbsp;
+    <button class="btn--more-down"><span class="important">Load More</span></button>
+  </div>
+</section>
     </main>
   </div>
     <script src="js/qui.js"></script>
@@ -119,4 +143,3 @@
    <script src="../bower_components/rainbow/js/language/html.js"></script>
 </body>
 </html>
-

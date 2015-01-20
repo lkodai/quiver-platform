@@ -9,9 +9,11 @@
 //================================================================
 @import "_app-vars";                                           //= <- Local file: will override any quiver vars from _quiver-vars ---
 //================================================================
-
-@import "../../../../css/source/base/_quiver-vars";      //From quiver
-@import "../../../../css/source/base/_base";            //From quiver
+//From quiver
+@import "../../../../css/source/base/_quiver-vars";      
+@import "../../../../css/source/base/_config";     
+//@import "../../../../css/source/base/_base";            
+//@import "../../../../css/source/base/_typography";           
 
 //================================================================
 @import "_base";                                           //= <- Local file: will add to base styles ---

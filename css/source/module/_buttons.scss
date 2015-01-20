@@ -1,0 +1,96 @@
+%btn {  
+  display: inline-block;
+  text-align:center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding:qui(type, base-line)/2 qui(type, gutter);
+  font-weight:qui(font, weight--bold);
+  border:none;
+  border-radius: 3px;
+  &.is-disabled, &.is-disabled:hover, &[disabled], &[disabled]:hover {
+    color: darken(qui(button, text-default), 50);
+    background:qui(button, color-disabled);
+    text-shadow: none;
+    // @include background-image(radial-gradient(50% 50%, ellipse cover, 
+    //             lighten(qui(button, color-disabled),8) 0%,
+    //             qui(button, color-disabled) 46%,
+    //             darken(qui(button, color-disabled),6) 95%,
+    //             darken(qui(button, color-disabled), 20) 97%));
+    box-shadow: none;
+    cursor: default;
+    transition: .08s all linear;
+  }
+}
+//Regular Buttons
+.btn--act {
+  @include button-defaults();
+}
+.btn--success, .btn--add, .btn-primary.active  {
+  @include button-defaults($bg-color: qui(button, color-add));
+}
+.btn--checkout  {
+  @include button-defaults($bg-color: qui(button, color-checkout));
+}
+.btn--warn  {
+  @include button-defaults($bg-color: qui(button, color-warn));
+}
+//Minimal Buttons
+.btn--modify {
+  @include button-minimals();
+}
+.btn--reset {
+  @include button-minimals($color: qui(button, color-act));
+}
+.btn--cancel {
+  @include button-minimals($color: qui(button, color-warn));
+}
+//States
+button { 
+  &.is-successful, &.is-successful:hover {
+    @include button-defaults($bg-color: qui(button, color-add));
+    transition: .5s all ease-in;
+    cursor: default;
+  }
+  &.is-failed, &.is-failed:hover {
+    @include button-defaults($bg-color: qui(button, color-warn));
+    transition: .5s all ease-out;
+    cursor: default;
+  }
+  &.is-waiting, &.is-waiting:hover {
+    @include button-defaults($bg-color: qui(button, color-checkout));
+    transition: .5s all ease-in;
+    cursor: default;
+    i {
+      text-shadow: none;
+    }
+  }
+}
+//Special Kid
+.btn--kill {
+  @extend %btn;
+  position: absolute;
+  background:none;
+  right:3px;
+  top:3px;
+  box-shadow:none;
+  padding:2px 4px;
+  margin:0;
+  //color:qui(incomm, ic--midlightgrey);
+  transition:all .18s ease-in-out;
+  &:hover, &:focus {
+    color:qui(button, color-warn);
+    font-size:17px;
+    background:none;
+    box-shadow:none;
+    text-shadow:0 1px 0 rgba(0,0,0,0.3);
+  }
+}
+.btn--more-up, .btn--more-down {
+  @extend .btn--act;
+  text-align: center;
+  width:100%;
+  border-radius:3px 3px 0 0;
+}
+.btn--more-down {
+  border-radius:0 0 3px 3px;
+}

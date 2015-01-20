@@ -7,7 +7,7 @@
 
 // _config includes several quiver dependencies and tools.
 // It also includes a local empty _app-vars file where you
-// define app variables and override nxsass defaults.
+// define app variables and override qui defaults.
 // Also we include an empty local _base file for defining
 // core HTML tag styles.
 //========================================================
@@ -18,7 +18,7 @@
 // If you use our 'gulp bower' task these paths should be correct.
 // Comment in only what you need ========================
 
-// @import "../../../css/source/module/_button";
+ @import "../../../css/source/module/_buttons";
 
 //========================================================
 

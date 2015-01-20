@@ -1,0 +1,56 @@
+@mixin button-defaults($bg-color:qui(button, color-act), $text:qui(button, text-default), $use-grad:qui(button, use-grad), $use-boxshad:qui(button, use-boxshad), $use-boxshad-hover:qui(button, use-boxshad-hover) ){
+	@extend %btn;
+  color: $text;
+  background: $bg-color;
+  text-shadow: 1px 1px 0 darken($bg-color, 15);
+  transition: all 0.05s ease-in-out;
+  @if $use-grad == true {
+  // @include background-image(radial-gradient(50% 50%, ellipse cover, 
+  //             lighten($bg-color,8) 0%,
+  //             $bg-color 46%,
+  //             darken($bg-color,6) 95%,
+  //             darken($bg-color, 20) 97%));
+  } @else {
+    background-image:$use-grad;
+  }
+  @if $use-boxshad == true {
+  box-shadow: darken($bg-color, 24) 0 -1px 0 inset, 
+              darken($bg-color, 12) 0 -2px 0 inset, 
+              lighten($bg-color, 6) 0 1px 0 inset, 
+              lighten($bg-color, 10) 0 2px 0 inset,
+              darken($bg-color, 12) 0 0 0px 0px inset;
+  } @else {
+    box-shadow:$use-boxshad;
+  }
+
+  &:hover {
+    color: $text;
+    text-decoration: none;
+    @if $use-boxshad-hover == true {
+      box-shadow: darken($bg-color, 24) 0 -1px 0 inset, 
+                  darken($bg-color, 12) 0 -2px 0 inset, 
+                  lighten($bg-color, 3) 0 1px 0 inset, 
+                  lighten($bg-color, 5) 0 2px 0 inset,
+                  darken($bg-color, 13) 0 0 22px 5px inset;
+    } @else {
+      box-shadow:$use-boxshad-hover;
+    }
+  }
+ }
+
+ @mixin button-minimals($color:qui(button, color-add), $text:qui(button, text-default)) {
+  @extend %btn;
+  color:desaturate($color, 20);
+  border:1px dotted $color;
+  text-shadow:none;
+  background: none;
+  box-shadow:inset 0 0 0 0 $color;
+  transition: all 0.045s ease-in-out;
+  &:hover, &:focus {
+    text-decoration: none;
+    border:1px solid $color;
+    text-shadow:0 1px 0 darken($color, 10);
+    color:$text;
+    box-shadow:inset 0 0 22px 16px $color;
+  } 
+}

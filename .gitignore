@@ -24,10 +24,10 @@
 
 
 # Ignore sass output css and error scss file
-#/css/source/nxsass-docs.css.map
-#/docs/css/nxsass-docs.css
-#/docs/css/nxsass-docs.css.map
-#/docs/css/nxsass-docs.scss
+#/css/source/quiver-docs.css.map
+#/docs/css/quiver-docs.css
+#/docs/css/quiver-docs.css.map
+#/docs/css/quiver-docs.scss
 
 #ignore compiled html files
 #/docs/*.html
