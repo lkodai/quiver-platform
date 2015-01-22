@@ -107,6 +107,13 @@ p {
 section {
   margin-bottom: 22.652px; }
 
+ol {
+  list-style-type: decimal;
+  margin-left: 22.652px; }
+
+.important {
+  font-weight: 700; }
+
 .btn--act, .btn--more-up, .btn--more-down, .btn--success, .btn--add, .btn-primary.active, .btn--checkout, .btn--warn, .btn--modify, .btn--reset, .btn--cancel, button.is-successful, button.is-successful:hover, button.is-failed, button.is-failed:hover, button.is-waiting, button.is-waiting:hover, .btn--kill {
   display: inline-block;
   text-align: center;
