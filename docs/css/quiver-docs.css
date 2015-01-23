@@ -298,7 +298,7 @@ main {
   content: "";
   display: table;
   clear: both; }
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1200px) {
   .project .setup-links, .project p {
     float: left;
     width: 50%; } }
@@ -333,7 +333,7 @@ main {
     .person {
       text-align: left;
       clear: left; } }
-  @media only screen and (min-width: 1450px) {
+  @media only screen and (min-width: 1200px) {
     .person {
       float: left;
       width: 50%;
@@ -345,19 +345,24 @@ main {
     border-radius: 100%; }
     @media only screen and (min-width: 600px) {
       .person img {
-        float: left;
-        margin-right: 22.652px; } }
+        display: inline-block;
+        vertical-align: baseline;
+        margin-right: 22.652px;
+        margin-bottom: 22.652px; } }
+    @media only screen and (min-width: 768px) {
+      .person img {
+        margin-bottom: 0; } }
 
 .person--bio {
   font-size: 1.3em; }
   @media only screen and (min-width: 600px) {
     .person--bio {
-      float: left;
+      display: inline-block;
       width: 75%; } }
   @media only screen and (min-width: 900px) {
     .person--bio {
       width: 82%; } }
-  @media only screen and (min-width: 1450px) {
+  @media only screen and (min-width: 1200px) {
     .person--bio {
       width: 75%; } }
   .person--bio h3 {
