@@ -1,3 +1,6 @@
-p:first-letter {
+p:first-letter, li:first-letter {
 	font-size: 1.3em;
+}
+.important {
+	font-weight: qui(font, weight--bold);
 }

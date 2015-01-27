@@ -1,6 +1,22 @@
+h1 {
+	font-weight: qui(font, weight--light);
+} h2, h3 {
+	font-weight: qui(font, weight--normal);
+}
+h3 {
+	color: lighten(qui(color, dark), 20);
+}
+// h3 {
+// 	font-weight: qui(font, weight--light);
+// }
+
 p {
-	max-width: 926px;
+ 	max-width: 926px;
+ }
+a {
+	color: qui(color, accent);
 }
 section {
-	margin-bottom: qui(type, base-line);
+ 	margin-bottom: qui(type, base-line);
 }
+
