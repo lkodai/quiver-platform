@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <title>Quiver Platform 0.0.1 UI Library</title>
+    <title>Quiver Platform 0.0.1 Style Guide Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700| Raleway:100,400,700| Open+Sans:300,400,700|Source+Code+Pro:400' rel='stylesheet' type='text/css'>
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -42,90 +42,103 @@
 </svg>
       </a>
     </section>
-    <ul>
-      <li class="drop-down__trigger"><a href="">Docs <i class="fa fa-angle-down"></i></a>
-        <ul class="drop-down">
-          <li><a href="">Layout</a></li>
-          <li><a href="interface.html">Interface</a></li>
-          <li><a href="">Workflows</a></li>
-          <li><a href="">Special Cases</a></li>
-        </ul>
-      </li>
-      <li><a href="">Read Me</a></li>
+    <ul>      
+      <li><a href="wat-is-this.html">Getting Started</a></li>
+      <li><a href="style-guide-interface.html">Style Guide</a></li>
       <li><a href="">Changelog</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 </header>
     <main>
-      <h1>Interface Pieces</h1>
-      <section class="buttons" id="buttons">
-  <h2>Buttons</h2>
-  <div class="buttons_example">
-    <pre><code data-language="html">
-<!-- pattern -->            
-<button class="btn--[modifier]">Button Text</button>
+    	<h1>The Style Guide Documentation</h1>
+<ul class="subnav-bar">
+	<li class="subnav-bar--item is-active"><a href="style-guide-type.html">Typography</a></li>
+    <li class="subnav-bar--item @@interface"><a href="style-guide-interface.html">Interface Pieces</a></li>
+    <li class="subnav-bar--item @@layout"><a href="style-guide-layout.html">Layout Helpers</a></li>
+    <li  class="subnav-bar--item @@special"><a href="style-guide-special.html">Special Instances</a></li>
+    <li  class="subnav-bar--item @@workflow"><a href="style-guide-workflow.html">Workflow Examples</a></li>
+</ul>
+    	<h2>Typography</h2>
+      	
+      	<section>
+          
+          <div class="panel">
+            <h1>Major Titles - H1</h1>
+            <p>H1 is reserved for the top level of information. There should only be <strong>one</strong> h1 on a page at a time. Example use: the name of our application.</p>
+            <h2>Subtitles - H2</h2>
+            <p>H2 is the next tier of information below the singular H1. Example use: Area titles within an application.</p>
+            <h3>Section Titles - H3</h3>
+            <p>h3 is a great candidate for sections and blocks</p>
+            <h4>Subsection titles - H4</h4>
+            <h5>Minor emphasis divider - H5</h5>
+            <h6>Supplemental information - H6</h6>
+            <p>Paragraph - Remember your hierarchy. Paragraph tags tend to share type styles with other body text, like lists, inside section tags, aside tags, captions, modals etc.</p> 
 
-<button class="btn--act">Act</button>
-<button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
-<button class="btn--checkout">Checkout</button>
-<button class="btn--warn">Warn</button>
-
-<button class="btn--modify">Modify</button>
-<button class="btn--reset">Reset</button>
-<button class="btn--cancel">Cancel</button>
-
-<button class="btn--act is-disabled">is-disabled</button>
-<button class="btn--act is-successful">is-successful</button>
-<button class="btn--act is-failed">is-failed</button>
-<button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
-
-<!-- Kill a panel or UI element -->
-<button class="btn--kill"><i class="fa fa-times"></i></button>
-
-<!-- Up and Down content-wide -->
-<button class="btn--more-up"><i class="fa fa-chevron-up"></i></button>
-<button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
-            </code></pre>
+            <hr>
+            <h3>Sample content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, hic, fugiat, fuga impedit nihil sequi <em>iusto est nostrum</em> fugit quaerat omnis quod iure laborum nam corporis delectus eius. Inventore, eligendi!</p>
+            <h4>Content Title</h4>
+            <h6>by Posty McBlog</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, ab nulla provident illo unde pariatur inventore fugit <a href="#">eius necessitatibus</a> debitis sit dicta enim quo! Velit sapiente nesciunt totam nisi culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <p>Error, <strong>nihil, vitae, nulla</strong> odio veniam labore est asperiores modi rerum culpa inventore optio fuga similique sapiente perferendis iusto blanditiis enim!</p>
+            <hr>
+            <h5>Stay a while and listen</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, doloribus, corporis eius accusantium culpa consequuntur dolorem totam magni explicabo maiores ullam assumenda officia optio voluptatibus nemo provident error expedita! Et.</p>
           </div>
-  <div class="panel">
-    <h3>Standard Button Styles</h3>
-    <p>Primary user actions. Note that Font Awesome icons can be added to buttons when appropriate.</p>
-    <button class="btn--act">Act</button>
-    <button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
-    <button class="btn--checkout">Checkout</button>
-    <button class="btn--warn">Warn</button>
-  </div>
+          <h2>Lists</h2>
+          <pre><code data-language="css">
+.standard-list {
+  @extend %list--default;
+}
+.standard-numbered-list{
+  @extend %list--ordered;
+}
+.horizontal--list {
+  @extend %list--horizontal;
+  li {
+    padding-right: 10px;
+    &:last-child {
+      padding-right:0;
+    }
+  }
+}
+          </code></pre>
+          <div class="panel">
+            <p>Quiver is geared for web applications. In applications we use unordered lists (ul) often, but not in their typical default browser presentation.</p>
+            
+            <p>Our default base removes some browser assumptions about ULs.</p> 
+            <ul>
+              <li>Luke</li>
+              <li>Leia</li>
+              <li>Han</li>
+            </ul>
+            <p>We have added a placeholder which can reinstate the default UL style if needed.</p>
+            <code>%list--default</code>
+            <p>Results in a list like this:</p>
+            <ul class="standard-list">
+              <li>Mal</li>
+              <li>Jayne</li>
+              <li>Kaylee</li>
+            </ul>
+             <p>Likewise, here is the placeholder for a standard ordered list (ol).</p>
+            <code>%list--ordered</code>
+            <ol class="standard-numbered-list">
+              <li>Dwarf Fortress</li>
+              <li>Minecraft</li>
+              <li>FTL</li>
+            </ol>
+            <p>Horizontal List: <code>@extend %list--horizontal</code></p>
+            <ul class="horizontal--list">
+              <li>Mal</li>
+              <li>Jayne</li>
+              <li>Kaylee</li>
+            </ul>
 
-  <div class="panel">
-    <h3>Minimal Button Styles</h3>
-    <p>Used for secondary user paths and actions.</p>
-    <button class="btn--modify">Modify</button>
-    <button class="btn--reset">Reset</button>
-    <button class="btn--cancel">Cancel</button>
-  </div>
-  <div class="panel">
-    <h3>Angular-controlled Button States</h3>
-    <p>These classes can be added and removed with js for a responsive and informative user experience.</p>
-    <button class="btn--act is-disabled">is-disabled</button>
-    <button class="btn--act is-successful">is-successful</button>
-    <button class="btn--act is-failed">is-failed</button>
-    <button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
-  </div>
-  <div class="panel">
-    <h3>Special Case Buttons</h3>
-    <p>Where a panel or UI element requires a simple close action (see top right). Typically should cancel whatever action generated the panel.</p>
-    <button class="btn--kill">Kill <i class="fa fa-times"></i></button>
-    <hr/>
-    <p>Up and down (or 'load more') buttons span the width of the container they are in and can be used in modals or embedded on "regular" pages.</p>
-    <button class="btn--more-up"><i class="fa fa-chevron-up"></i>
-    </button>
-    <p class="item">[Content here]</p>
-    <button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
-    &nbsp;
-    <button class="btn--more-down"><span class="important">Load More</span></button>
-  </div>
-</section>
+          </div>
+        </section>
+
+
+
     </main>
   </div>
     <script src="js/qui.js"></script>

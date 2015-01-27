@@ -13,7 +13,7 @@ main {
 .project {
   @include clearfix;
   .setup-links, p {
-    @include breakpoint(larger) {
+    @include breakpoint(large) {
       float: left;
       width: 50%
     }
@@ -54,7 +54,7 @@ main {
     text-align: left;
     clear: left;
   }  
-  @include breakpoint(larger) {
+  @include breakpoint(large) {
     float: left;
     width: 50%;
     clear: none;
@@ -65,21 +65,26 @@ main {
     min-width:70px;
     border-radius: 100%;
     @include breakpoint(small-awk) {
-      float: left;
+      display: inline-block;
+      vertical-align: baseline;
       margin-right: qui(type, gutter);
+      margin-bottom: qui(type, base-leading);
+    }
+    @include breakpoint(small) {
+      margin-bottom: 0;
     }
   }
 }
 .person--bio {
   font-size: 1.3em;     
   @include breakpoint(small-awk) {
-    float: left;
+    display: inline-block;
     width: 75%;
   }
   @include breakpoint(medium-awk) {
     width: 82%;
   }
-  @include breakpoint(larger) {
+  @include breakpoint(large) {
     width: 75%
   }
   h3 {
