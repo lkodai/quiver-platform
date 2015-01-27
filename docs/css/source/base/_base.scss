@@ -1,6 +1,22 @@
+h1, h3 {
+	font-weight: qui(font, weight--normal);
+}
+h2, h4 {
+	font-weight: qui(font, weight--light);
+}
+h3 {
+	color: lighten(qui(color, dark), 20);
+}
 p {
 	max-width: 926px;
 }
+a {
+	color: qui(color, accent);
+}
 section {
 	margin-bottom: qui(type, base-line);
+}
+ol {
+	list-style-type: decimal;
+	margin-left: qui(type, gutter); ///WRONG and TEMPORARY
 }
