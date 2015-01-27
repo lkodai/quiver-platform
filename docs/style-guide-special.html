@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <title>Quiver Platform 0.0.1 UI Library</title>
+    <title>Quiver Platform 0.0.1 Style Guide Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700| Raleway:100,400,700| Open+Sans:300,400,700|Source+Code+Pro:400' rel='stylesheet' type='text/css'>
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
     </section>
     <ul>      
       <li><a href="">Getting Started</a></li>
-      <li><a href="style-guide.html">Style Guide</a></li>
+      <li><a href="style-guide-interface.html">Style Guide</a></li>
       <li><a href="">Changelog</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
@@ -52,80 +52,16 @@
 </header>
     <main>
     	<h1>The Style Guide Documentation</h1>
-        <ul class="subnav-bar">
-    <li class="subnav-bar--item" ui-sref="interface" ui-sref-active="is-active">Interface Pieces</li>
-    <li class="subnav-bar--item" ui-sref="layout" ui-sref-active="is-active">Layout Helpers</li>
-    <li  class="subnav-bar--item" ui-sref="special" ui-sref-active="is-active">Special Instances</li>
-    <li  class="subnav-bar--item" ui-sref="workflow" ui-sref-active="is-active">Workflow Examples</li>
+<ul class="subnav-bar">
+    <li class="subnav-bar--item @@interface"><a href="style-guide-interface.html">Interface Pieces</a></li>
+    <li class="subnav-bar--item @@layout"><a href="style-guide-layout.html">Layout Helpers</a></li>
+    <li  class="subnav-bar--item is-active"><a href="style-guide-special.html">Special Instances</a></li>
+    <li  class="subnav-bar--item @@workflow"><a href="style-guide-workflow.html">Workflow Examples</a></li>
 </ul>
-      	<h2>Interface Pieces</h2>
-      	<section class="buttons" id="buttons">
-  <h2>Buttons</h2>
-  <div class="buttons_example">
-    <pre><code data-language="html">
-<!-- pattern -->            
-<button class="btn--[modifier]">Button Text</button>
+     	<h2>Special Instances</h2>
 
-<button class="btn--act">Act</button>
-<button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
-<button class="btn--checkout">Checkout</button>
-<button class="btn--warn">Warn</button>
 
-<button class="btn--modify">Modify</button>
-<button class="btn--reset">Reset</button>
-<button class="btn--cancel">Cancel</button>
 
-<button class="btn--act is-disabled">is-disabled</button>
-<button class="btn--act is-successful">is-successful</button>
-<button class="btn--act is-failed">is-failed</button>
-<button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
-
-<!-- Kill a panel or UI element -->
-<button class="btn--kill"><i class="fa fa-times"></i></button>
-
-<!-- Up and Down content-wide -->
-<button class="btn--more-up"><i class="fa fa-chevron-up"></i></button>
-<button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
-            </code></pre>
-          </div>
-  <div class="panel">
-    <h3>Standard Button Styles</h3>
-    <p>Primary user actions. Note that Font Awesome icons can be added to buttons when appropriate.</p>
-    <button class="btn--act">Act</button>
-    <button class="btn--add"><i class="fa fa-plus-circle"></i> Add</button>
-    <button class="btn--checkout">Checkout</button>
-    <button class="btn--warn">Warn</button>
-  </div>
-
-  <div class="panel">
-    <h3>Minimal Button Styles</h3>
-    <p>Used for secondary user paths and actions.</p>
-    <button class="btn--modify">Modify</button>
-    <button class="btn--reset">Reset</button>
-    <button class="btn--cancel">Cancel</button>
-  </div>
-  <div class="panel">
-    <h3>Angular-controlled Button States</h3>
-    <p>These classes can be added and removed with js for a responsive and informative user experience.</p>
-    <button class="btn--act is-disabled">is-disabled</button>
-    <button class="btn--act is-successful">is-successful</button>
-    <button class="btn--act is-failed">is-failed</button>
-    <button class="btn--act is-waiting"><i class="fa fa-gear fa-spin"></i> is-waiting</button>
-  </div>
-  <div class="panel">
-    <h3>Special Case Buttons</h3>
-    <p>Where a panel or UI element requires a simple close action (see top right). Typically should cancel whatever action generated the panel.</p>
-    <button class="btn--kill">Kill <i class="fa fa-times"></i></button>
-    <hr/>
-    <p>Up and down (or 'load more') buttons span the width of the container they are in and can be used in modals or embedded on "regular" pages.</p>
-    <button class="btn--more-up"><i class="fa fa-chevron-up"></i>
-    </button>
-    <p class="item">[Content here]</p>
-    <button class="btn--more-down"><i class="fa fa-chevron-down"></i></button>
-    &nbsp;
-    <button class="btn--more-down"><span class="important">Load More</span></button>
-  </div>
-</section>
 
     </main>
   </div>

@@ -313,7 +313,6 @@ button.is-waiting, button.is-waiting:hover {
           flex-basis: 130px;
   min-width: 120px;
   max-width: 220px;
-  padding: 11.326px 22.652px;
   background-color: #efefef;
   box-shadow: 0px -1px 0 #e2e2e2, 1px 1px 4px #d5d5d5;
   border-right: 1px solid #e2e2e2;
@@ -323,11 +322,16 @@ button.is-waiting, button.is-waiting:hover {
   text-align: center;
   cursor: pointer; }
   .subnav-bar--item a, .subnav-bar--item__back a {
-    text-shadow: none; }
+    color: #666666;
+    text-shadow: 0px 1px 0px white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 11.326px 22.652px; }
   .subnav-bar--item:hover, .subnav-bar--item__back:hover {
     background-color: #dfdfdf;
     text-decoration: underline; }
-  .subnav-bar--item.is-active, .is-active.subnav-bar--item__back {
+  .subnav-bar--item.is-active, .is-active.subnav-bar--item__back, .subnav-bar--item.is-active a, .is-active.subnav-bar--item__back a {
     background-color: #212121;
     color: #dfc856;
     text-shadow: 0px 1px 0px black;
