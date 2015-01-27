@@ -384,7 +384,7 @@ button.is-waiting, button.is-waiting:hover {
           flex-wrap: wrap;
   margin-top: 22.652px;
   margin-bottom: 22.652px; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
     .horizontal-boxes {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -407,10 +407,14 @@ button.is-waiting, button.is-waiting:hover {
     margin-left: 0; }
   .horizontal-box:last-of-type, .horizontal-box--full-bg:last-of-type {
     margin-right: 0; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
     .horizontal-box, .horizontal-box--full-bg {
+      padding: 22.652px 11.326px;
       width: 31%;
       margin: 0 auto; } }
+  @media only screen and (min-width: 1024px) {
+    .horizontal-box, .horizontal-box--full-bg {
+      padding: 22.652px 22.652px; } }
   .horizontal-box img, .horizontal-box--full-bg img {
     margin: 0 auto 22.652px; }
   .horizontal-box div, .horizontal-box--full-bg div {
@@ -656,3 +660,7 @@ p:first-letter, li:first-letter {
   margin: 0 auto 22.652px;
   position: relative;
   display: inline-block; }
+
+@media only screen and (min-width: 768px) {
+  .horizontal-box:first-of-type, .horizontal-box--full-bg:first-of-type {
+    padding-left: 0; } }

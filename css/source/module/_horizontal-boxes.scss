@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     margin-top: qui(type, base-leading);
     margin-bottom: qui(type, base-leading);
-    @include breakpoint(small-awk) {
+    @include breakpoint(small) {
     	flex-wrap: nowrap;
     }
  }
@@ -19,9 +19,13 @@
     &:last-of-type {
     	margin-right: 0;
     }
-    @include breakpoint(small-awk){
+    @include breakpoint(small) {
+    	padding: qui(type, base-leading) qui(type, gutter)/2; 
     	width: 31%;
     	margin: 0 auto;
+    }
+    @include breakpoint(medium) {
+    	padding: qui(type, base-leading) qui(type, gutter);
     }
     img {
      	margin: 0 auto qui(type, base-leading);
