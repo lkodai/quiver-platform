@@ -35,8 +35,8 @@ h1 {
   margin-bottom: 22.652px; }
 
 h2 {
-  font-size: 32.2px;
-  line-height: 52.0996px;
+  font-size: 29.4px;
+  line-height: 47.5692px;
   margin-bottom: 22.652px; }
 
 h1 + h2, h2 + h3 {
@@ -567,7 +567,7 @@ nav {
     fill: #f2f1e9; }
 
 p:first-letter, li:first-letter {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 .important {
   font-weight: 700; }
