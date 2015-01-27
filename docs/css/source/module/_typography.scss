@@ -4,3 +4,14 @@ p:first-letter, li:first-letter {
 .important {
 	font-weight: qui(font, weight--bold);
 }
+.list--default {
+	@extend %list--default;
+	ul {
+		@extend %list--default;
+		margin: 0;
+		list-style-type: circle;
+	}
+}
+.list--ordered {
+	@extend %list--ordered;
+}

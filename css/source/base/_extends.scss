@@ -1,0 +1,26 @@
+//default browser style lists
+%list--default {
+  margin:qui(type, gutter)/2 0; 
+  padding:0 0 0 qui(type, gutter); 
+  list-style:disc;
+  font-size:qui(type, base-size);
+  line-height:qui(type, base-line);
+  font-weight:qui(font, weight--light);
+}
+%list--ordered {
+  margin:qui(type, gutter)/2 0;
+  padding:0 0 0 qui(type, gutter); 
+  list-style:decimal;
+  font-size:qui(type, base-size);
+  line-height:qui(type, base-line);
+  font-weight:qui(font, weight--light);
+}
+%list--horizontal {
+  @extend %cleared;
+  margin:0;
+  padding:0;
+  list-style: none;
+  li {
+    float: left;
+  }
+}
