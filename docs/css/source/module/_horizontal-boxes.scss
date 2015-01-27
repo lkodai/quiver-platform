@@ -1,0 +1,12 @@
+.horizontal-boxes {
+	.fa {
+		background-color: qui(color, accent);
+		color: qui(color, off-white);
+		font-size: 4em;
+		border-radius: 100%;
+		padding: qui(type, base-leading) qui(type, gutter);
+		margin: 0 auto qui(type, base-leading);
+		position:relative;
+		display: inline-block;
+	}
+}

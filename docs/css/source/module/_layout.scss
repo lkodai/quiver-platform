@@ -3,6 +3,12 @@ main {
 	@include breakpoint(small-awk) {
 		padding: qui(type, base-leading) qui(type, gutter);
 	}
+  @include breakpoint(large) {
+    width: 85%;
+  }
+  @include breakpoint(larger) {
+    width: 75%;
+  }
 }
 // .wrapper {
 //   h2 {

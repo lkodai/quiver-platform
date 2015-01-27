@@ -1,4 +1,20 @@
 @import url(../../../bower_components/normalize-css/normalize.css);
+.list--default, .list--default ul {
+  margin: 11.326px 0;
+  padding: 0 0 0 22.652px;
+  list-style: disc;
+  font-size: 14px;
+  line-height: 22.652px;
+  font-weight: 300; }
+
+.list--ordered {
+  margin: 11.326px 0;
+  padding: 0 0 0 22.652px;
+  list-style: decimal;
+  font-size: 14px;
+  line-height: 22.652px;
+  font-weight: 300; }
+
 html {
   box-sizing: border-box; }
 
@@ -358,11 +374,66 @@ button.is-waiting, button.is-waiting:hover {
       -ms-flex-positive: 0;
           flex-grow: 0; }
 
+.horizontal-boxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 22.652px;
+  margin-bottom: 22.652px; }
+  @media only screen and (min-width: 600px) {
+    .horizontal-boxes {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
+
+.horizontal-box, .horizontal-box--full-bg {
+  padding: 22.652px 22.652px;
+  width: 100%;
+  margin: 22.652px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .horizontal-box:first-of-type, .horizontal-box--full-bg:first-of-type {
+    margin-left: 0; }
+  .horizontal-box:last-of-type, .horizontal-box--full-bg:last-of-type {
+    margin-right: 0; }
+  @media only screen and (min-width: 600px) {
+    .horizontal-box, .horizontal-box--full-bg {
+      width: 31%;
+      margin: 0 auto; } }
+  .horizontal-box img, .horizontal-box--full-bg img {
+    margin: 0 auto 22.652px; }
+  .horizontal-box div, .horizontal-box--full-bg div {
+    padding: 22.652px 22.652px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
+
+.horizontal-box--full-bg {
+  background-color: #e2e2e2; }
+
 main {
   padding: 5.663px 5.663px; }
   @media only screen and (min-width: 600px) {
     main {
       padding: 22.652px 22.652px; } }
+  @media only screen and (min-width: 1200px) {
+    main {
+      width: 85%; } }
+  @media only screen and (min-width: 1450px) {
+    main {
+      width: 75%; } }
 
 .project:after {
   content: "";
@@ -571,3 +642,17 @@ p:first-letter, li:first-letter {
 
 .important {
   font-weight: 700; }
+
+.list--default ul {
+  margin: 0;
+  list-style-type: circle; }
+
+.horizontal-boxes .fa {
+  background-color: #6cbde0;
+  color: #f2f1e9;
+  font-size: 4em;
+  border-radius: 100%;
+  padding: 22.652px 22.652px;
+  margin: 0 auto 22.652px;
+  position: relative;
+  display: inline-block; }

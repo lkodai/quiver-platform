@@ -1,0 +1,37 @@
+.horizontal-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: qui(type, base-leading);
+    margin-bottom: qui(type, base-leading);
+    @include breakpoint(small-awk) {
+    	flex-wrap: nowrap;
+    }
+ }
+.horizontal-box {
+	padding: qui(type, base-leading) qui(type, gutter); 
+    width: 100%;
+    margin: qui(type, base-leading) auto;
+    display: flex;
+    flex-direction: column;
+    &:first-of-type {
+    	margin-left: 0;
+    }
+    &:last-of-type {
+    	margin-right: 0;
+    }
+    @include breakpoint(small-awk){
+    	width: 31%;
+    	margin: 0 auto;
+    }
+    img {
+     	margin: 0 auto qui(type, base-leading);
+    }
+    div {
+      padding: qui(type, base-leading) qui(type, gutter); 
+      flex: 1 0 auto;
+    }
+}
+.horizontal-box--full-bg {
+	@extend .horizontal-box;
+	background-color: qui(color, light);
+}
