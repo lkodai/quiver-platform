@@ -8,7 +8,6 @@
     	<h2>Typography</h2>
       	
       	<section>
-          
           <div class="panel">
             <h1>Major Titles - H1</h1>
             <p>H1 is reserved for the top level of information. There should only be <strong>one</strong> h1 on a page at a time. Example use: the name of our application.</p>
@@ -31,7 +30,10 @@
             <h5>Stay a while and listen</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, doloribus, corporis eius accusantium culpa consequuntur dolorem totam magni explicabo maiores ullam assumenda officia optio voluptatibus nemo provident error expedita! Et.</p>
           </div>
-          <h2>Lists</h2>
+
+          
+		<h2>Lists</h2>
+
           <pre><code data-language="css">
 .standard-list {
   @extend %list--default;
@@ -49,7 +51,9 @@
   }
 }
           </code></pre>
+
           <div class="panel">
+
             <p>Quiver is geared for web applications. In applications we use unordered lists (ul) often, but not in their typical default browser presentation.</p>
             
             <p>Our default base removes some browser assumptions about ULs.</p> 
@@ -61,14 +65,14 @@
             <p>We have added a placeholder which can reinstate the default UL style if needed.</p>
             <code>%list--default</code>
             <p>Results in a list like this:</p>
-            <ul class="standard-list">
+            <ul class="list--default">
               <li>Mal</li>
               <li>Jayne</li>
               <li>Kaylee</li>
             </ul>
              <p>Likewise, here is the placeholder for a standard ordered list (ol).</p>
             <code>%list--ordered</code>
-            <ol class="standard-numbered-list">
+            <ol class="list--ordered">
               <li>Dwarf Fortress</li>
               <li>Minecraft</li>
               <li>FTL</li>

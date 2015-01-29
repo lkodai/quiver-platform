@@ -4,6 +4,9 @@ p:first-letter, li:first-letter {
 .important {
 	font-weight: qui(font, weight--bold);
 }
+h2, h3 {
+	clear: both;
+}
 .list--default {
 	@extend %list--default;
 	ul {

@@ -1,3 +1,9 @@
+%panel {
+  padding: qui(type, base-leading) 0;
+  position: relative;
+}
+
+
 //default browser style lists
 %list--default {
   margin:qui(type, gutter)/2 0; 

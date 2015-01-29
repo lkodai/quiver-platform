@@ -4,17 +4,30 @@ main {
 		padding: qui(type, base-leading) qui(type, gutter);
 	}
   @include breakpoint(large) {
-    width: 85%;
+    width: 90%;
   }
   @include breakpoint(larger) {
-    width: 75%;
+    width: 85%;
   }
 }
-// .wrapper {
-//   h2 {
-//     @include clearfix;
-//   }
-// }
+.panel {
+  @extend %panel;
+  float: left;
+  clear: left;
+  @include breakpoint(small) {
+    width: 49%
+  }
+}
+pre {
+  float: right;
+  clear: right;
+  border-radius: qui(panel, border-radius);
+  @include breakpoint(small) {
+    width: 49%;
+    //margin-left: qui(type, gutter);
+  }
+}
+
 //About Page layout
 .project {
   @include clearfix;
