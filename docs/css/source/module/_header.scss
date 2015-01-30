@@ -133,12 +133,18 @@ nav {
 		height: 100%;
 		max-width: 154px;
 		&:hover {
-			g {
+			text, path, rect {
 				fill: qui(color, accent);
+			}
+			polygon {
+				stroke: qui(color, accent);
 			}
 		}
 	}
-	g { //svg tag I guess?
+	text, path, rect { //svg tag I guess?
 		fill: qui(color, off-white);
+	}
+	polygon {
+		stroke: qui(color, off-white);
 	}
 }

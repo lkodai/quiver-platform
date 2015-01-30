@@ -655,10 +655,14 @@ nav {
     width: 100%;
     height: 100%;
     max-width: 154px; }
-    .logo svg:hover g {
+    .logo svg:hover text, .logo svg:hover path, .logo svg:hover rect {
       fill: #6cbde0; }
-  .logo g {
+    .logo svg:hover polygon {
+      stroke: #6cbde0; }
+  .logo text, .logo path, .logo rect {
     fill: #f2f1e9; }
+  .logo polygon {
+    stroke: #f2f1e9; }
 
 p:first-letter, li:first-letter {
   font-size: 1.2em; }
